@@ -54,3 +54,13 @@ const totalCalc = function () {
   total = subtotal + ship
   totalElem.textContent = total.toFixed(2)
 }
+
+let form = document.getElementById('form');
+function submitForm() {
+  if (form.checkValidity()) {
+    alert('Adding Succesful!')
+  }
+  else {
+    alert('Please enter all required fields')
+  }
+}
