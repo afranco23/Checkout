@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header"><h1>Checkout</h1></div>
+  <div class="main">
+    <div class="info">
+    <form>
+      <h1>Contact information</h1>
+      <p>E-mail</p>
+      <div class="form-input">
+        <span class="icon"><i class="fa-solid fa-envelope"></i></span> 
+        <input type="text" placeholder="Enter your email..." id="email"/>
+      </div>
+      <p>Phone</p>
+      <div class="form-input">
+        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+        <input type="text" placeholder="Enter your phone..." id="phone"/>  
+      </div> 
+      <h2>Shipping adress</h2>
+      <p>Full name</p>
+      <div class="form-input">
+        <span class="icon"><i class="fa-solid fa-envelope"></i></span> 
+        <input type="text" placeholder="Rodney Cotton" id="full-name"/>
+      </div>
+      <p>Address</p>
+      <div class="form-input">
+        <span class="icon"><i class="fa-solid fa-house"></i></span> 
+        <input type="text" placeholder="Your address..." id="address"/>
+      </div>
+      <p>City</p>
+      <div class="form-input">
+        <span class="icon"><i class="fa-solid fa-city"></i></span> 
+        <input type="text" placeholder="Your city..." id="city"/>
+      </div>
+      <div class="country-pcode">
+        <div class="pais">
+          <p>Country</p>
+          <div class="form-input">
+            <span class="icon"><i class="fa-solid fa-earth-americas"></i></span>
+            <select id="countries" required>
+              <option value="" id="option" disabled selected hidden>Your country...</option>
+            </select>
+          </div>
+        </div>
+        <div class="cep">
+          <p>Postal Code</p>
+          <div class="form-input">
+            <span class="icon"><i class="fa-solid fa-envelopes-bulk"></i></span>
+            <input type="text" placeholder="Your postal code..." id="zipcode">
+          </div>
+        </div>
+      </div>
+    </form>
+    <input type="checkbox"><span id="save">Save this information for next time</span>
+    <div class="submitBtn">
+    <button type="submit">Continue</button>
+    </div>
+    </div>
+
+    <div class="checkout">
+      <div class="detail">
+        <div class="image">
+        <img src="./assets/photo1.png" alt="">
+        </div>
+        <div class="info-product">
+        <h4 class="product-name">Vintage Backbag</h4>
+        <div class="price">
+        $ <span id="price">54.99</span><p>$94.99</p>
+        </div>
+          <div class="wrapper">
+            <div class="product-qty">
+              <button id="decrement">
+                <ion-icon name="remove-outline"></ion-icon>
+              </button>
+                <span id="quantity">1</span>
+              <button id="increment">
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+          </div>
+      </div>
+        <div class="detail">
+        <div class="image" id="lastimg">
+        <img src="./assets/photo2.png" alt="">
+        </div>
+                <div class="info-product">
+        <h4 class="product-name">Levi Shoes</h4>
+        <div class="price">
+         $ <span id="price">74.99</span><p>$124.99</p>
+        </div>
+        <div class="wrapper">
+          <div class="product-qty">
+            <button id="decrement">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+            <span id="quantity">1</span>
+            <button id="increment">
+              <ion-icon name="add-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr>
+      <div class="finish">
+      <h1>Shipping</h1>
+      <p>$ <span id="shipp">19.00</span></p>
+      </div>
+      <hr>
+      <div class="finish">
+      <h1>Total</h1>
+      <p>$ <span id="total">148.98</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    created by Alexander De Franco - devsChallenge.io
+  </div>
+  <script src="https://kit.fontawesome.com/c8e8a659db.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
+
